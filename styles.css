@@ -1,0 +1,255 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 200px; /* Fixed width for the left navigation */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable scrolling for navigation */
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%; /* Ensure full width within the header */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-bottom: 10px; /* Adjust spacing between menu items */
+}
+
+header nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 200px; /* Ensure content starts after the navigation */
+    padding: 20px;
+}
+
+/* Home Section */
+#home {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#home .image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#home .text {
+    margin-top: 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Biography Section */
+#biography {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+#biography .bio-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#biography h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#biography ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#biography ul li {
+    margin-bottom: 10px;
+}
+
+#biography ul li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.portfolio-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.services-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service .price {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.service p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 200px; /* Same width as header for consistency */
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Allow content to determine height */
+        position: static;
+    }
+
+    main {
+        margin-left: 0;
+        padding-top: 20px; /* Adjust for header removal */
+    }
+
+    footer {
+        width: 100%;
+        position: static;
+    }
+}
